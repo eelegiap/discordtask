@@ -111,7 +111,7 @@ p, table, .normal{
 }
 .table-container {
     width: 100%;
-    max-height: 325px;  /* Set this to your desired height */
+    max-height: 290px;  /* Set this to your desired height */
     overflow-y: auto;
 }
 
