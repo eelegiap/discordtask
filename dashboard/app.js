@@ -178,7 +178,7 @@ d3.queue()
             }
 
             d3.selectAll('.timePeriod').text(timePeriod)
-            
+
             //End Top Title
 
             //x Axis Title
@@ -220,7 +220,7 @@ d3.queue()
                 .attr("r", 5) // radius of circle
                 .style('fill', '#EFF5FD')
                 .style('stroke', '#3862bb')
-                .on("mouseover", function(event, d) {
+                .on("mouseover", function (event, d) {
                     // Show the tooltip on mouseover
                     d3.select(this)
                         .transition()
@@ -232,10 +232,12 @@ d3.queue()
                     let coords = d3.mouse(this); // Get the current mouse position
                     let svgPosition = this.closest('svg').getBoundingClientRect(); // Get the position of the SVG container
                     tooltip.html(`${event.count} ${dType.toLowerCase()}<br>on ${formatTime(event.time)}`)
-                        .style("left", (coords[0] + svgPosition.left + 10) + "px") // Take into account the SVG offset
-                        .style("top", (coords[1] + svgPosition.top + 10) + "px"); // Take into account the SVG offset
+                        .style("left", (coords[0] + 10) + "px") // Take into account the SVG offset
+                        .style("top", (coords[1] + 10) + "px"); // Take into account the SVG offset
+                    // .style("left", (coords[0] + svgPosition.left + 10) + "px") // Take into account the SVG offset
+                    // .style("top", (coords[1] + svgPosition.top + 10) + "px"); // Take into account the SVG offset
                 })
-                
+
                 .on("mouseout", function (d) {
                     // Hide the tooltip on mouseout
                     d3.select(this)
