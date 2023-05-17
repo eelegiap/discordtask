@@ -222,31 +222,26 @@ d3.queue()
                 .style('stroke', '#3862bb')
                 .on("mouseover", function (event, d) {
                     // Show the tooltip on mouseover
-                    d3.select(this)
-                        .transition()
-                        .duration(500)
-                        .attr('r', 7);
-                    tooltip.transition()
-                        .duration(200)
-                        .style("opacity", .9);
-                    let coords = d3.mouse(this); // Get the current mouse position
-                    let svgPosition = this.closest('svg').getBoundingClientRect(); // Get the position of the SVG container
-                    tooltip.html(`${event.count} ${dType.toLowerCase()}<br>on ${formatTime(event.time)}`)
-                        .style("left", (coords[0] + 10) + "px") // Take into account the SVG offset
-                        .style("top", (coords[1] + 10) + "px"); // Take into account the SVG offset
-                    // .style("left", (coords[0] + svgPosition.left + 10) + "px") // Take into account the SVG offset
-                    // .style("top", (coords[1] + svgPosition.top + 10) + "px"); // Take into account the SVG offset
+                    d3.select(this).transition().attr('r',8)
+                    var tooltipID
+                    if (dType == 'New members') {
+                        tooltipID = '#tooltip2'
+                    } else {
+                        tooltipID = '#tooltip1'
+                    }
+                    d3.select(tooltipID).html(`${event.count} ${dType.toLowerCase()} on ${formatTime(event.time)}`)
                 })
 
                 .on("mouseout", function (d) {
+                    d3.select(this).transition().attr('r',5)
                     // Hide the tooltip on mouseout
-                    d3.select(this)
-                        .transition()
-                        .duration(500)
-                        .attr('r', 5);
-                    tooltip.transition()
-                        .duration(500)
-                        .style("opacity", 0);
+                    var tooltipID
+                    if (dType == 'New members') {
+                        tooltipID = '#tooltip2'
+                    } else {
+                        tooltipID = '#tooltip1'
+                    }
+                    d3.select(tooltipID).html('')
                 });
 
         }

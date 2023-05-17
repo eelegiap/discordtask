@@ -135,3 +135,11 @@ mark {
 .timePeriod {
     text-decoration: underline;
 }
+.tooltipinfo {
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+}
+.tooltipinfo mark {
+    background-color: #E0EBFB;;
+}
