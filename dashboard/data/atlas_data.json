@@ -1,0 +1,470 @@
+[
+    {
+        "date": "2023-03-29",
+        "words": {
+            "Companies, agencies, institutions, etc.": [
+                {
+                    "text": "hola",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "hola_Companies, agencies, institutions, etc._1"
+                },
+                {
+                    "text": "@andriy",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "@andriy_Companies, agencies, institutions, etc._1"
+                },
+                {
+                    "text": "ps",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "ps_Companies, agencies, institutions, etc._1"
+                },
+                {
+                    "text": "google",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "google_Companies, agencies, institutions, etc._1"
+                }
+            ],
+            "Countries, cities, states.": [
+                {
+                    "text": "heroku",
+                    "frequency": 1,
+                    "topic": "Countries, cities, states.",
+                    "id": "heroku_Countries, cities, states._1"
+                }
+            ],
+            "People, including fictional.": [
+                {
+                    "text": "atlas",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "atlas_People, including fictional._1"
+                },
+                {
+                    "text": "https://docs.nomic.ai/map_your_text.html",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "https://docs.nomic.ai/map_your_text.html_People, including fictional._1"
+                },
+                {
+                    "text": "atlas",
+                    "frequency": 2,
+                    "topic": "People, including fictional.",
+                    "id": "atlas_People, including fictional._2"
+                },
+                {
+                    "text": "bert-mini",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "bert-mini_People, including fictional._1"
+                },
+                {
+                    "text": "yeeee",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "yeeee_People, including fictional._1"
+                },
+                {
+                    "text": "chatgpt",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "chatgpt_People, including fictional._1"
+                }
+            ],
+            "Objects, vehicles, foods, etc. (Not services.)": [
+                {
+                    "text": "soc2",
+                    "frequency": 1,
+                    "topic": "Objects, vehicles, foods, etc. (Not services.)",
+                    "id": "soc2_Objects, vehicles, foods, etc. (Not services.)_1"
+                },
+                {
+                    "text": "250k",
+                    "frequency": 1,
+                    "topic": "Objects, vehicles, foods, etc. (Not services.)",
+                    "id": "250k_Objects, vehicles, foods, etc. (Not services.)_1"
+                }
+            ],
+            "Titles of books, songs, etc.": [],
+            "Nationalities or religious or political groups.": [],
+            "Non-GPE locations, mountain ranges, bodies of water.": [],
+            "Named hurricanes, battles, wars, sports events, etc.": [],
+            "Buildings, airports, highways, bridges, etc.": [],
+            "Named documents made into laws.": [],
+            "Any named language.": []
+        }
+    },
+    {
+        "date": "2023-04-05",
+        "words": {
+            "Companies, agencies, institutions, etc.": [
+                {
+                    "text": "pinecone",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "pinecone_Companies, agencies, institutions, etc._1"
+                },
+                {
+                    "text": "llm",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "llm_Companies, agencies, institutions, etc._1"
+                },
+                {
+                    "text": "api",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "api_Companies, agencies, institutions, etc._1"
+                },
+                {
+                    "text": "hipaa",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "hipaa_Companies, agencies, institutions, etc._1"
+                },
+                {
+                    "text": "ip",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "ip_Companies, agencies, institutions, etc._1"
+                }
+            ],
+            "Countries, cities, states.": [
+                {
+                    "text": "atlas",
+                    "frequency": 2,
+                    "topic": "Countries, cities, states.",
+                    "id": "atlas_Countries, cities, states._2"
+                },
+                {
+                    "text": "@andriy",
+                    "frequency": 1,
+                    "topic": "Countries, cities, states.",
+                    "id": "@andriy_Countries, cities, states._1"
+                }
+            ],
+            "People, including fictional.": [
+                {
+                    "text": "atlas",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "atlas_People, including fictional._1"
+                }
+            ],
+            "Objects, vehicles, foods, etc. (Not services.)": [
+                {
+                    "text": "soc2",
+                    "frequency": 1,
+                    "topic": "Objects, vehicles, foods, etc. (Not services.)",
+                    "id": "soc2_Objects, vehicles, foods, etc. (Not services.)_1"
+                }
+            ],
+            "Titles of books, songs, etc.": [],
+            "Nationalities or religious or political groups.": [],
+            "Non-GPE locations, mountain ranges, bodies of water.": [
+                {
+                    "text": "your_table_name",
+                    "frequency": 1,
+                    "topic": "Non-GPE locations, mountain ranges, bodies of water.",
+                    "id": "your_table_name_Non-GPE locations, mountain ranges, bodies of water._1"
+                }
+            ],
+            "Named hurricanes, battles, wars, sports events, etc.": [],
+            "Buildings, airports, highways, bridges, etc.": [],
+            "Named documents made into laws.": [],
+            "Any named language.": []
+        }
+    },
+    {
+        "date": "2023-04-12",
+        "words": {
+            "Companies, agencies, institutions, etc.": [],
+            "Countries, cities, states.": [
+                {
+                    "text": "github",
+                    "frequency": 1,
+                    "topic": "Countries, cities, states.",
+                    "id": "github_Countries, cities, states._1"
+                }
+            ],
+            "People, including fictional.": [
+                {
+                    "text": "edward tufte",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "edward tufte_People, including fictional._1"
+                },
+                {
+                    "text": "cole nussbaumer knaflic",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "cole nussbaumer knaflic_People, including fictional._1"
+                },
+                {
+                    "text": "andy kirk",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "andy kirk_People, including fictional._1"
+                }
+            ],
+            "Objects, vehicles, foods, etc. (Not services.)": [
+                {
+                    "text": "atlas",
+                    "frequency": 1,
+                    "topic": "Objects, vehicles, foods, etc. (Not services.)",
+                    "id": "atlas_Objects, vehicles, foods, etc. (Not services.)_1"
+                }
+            ],
+            "Titles of books, songs, etc.": [
+                {
+                    "text": "the visual display of quantitative information",
+                    "frequency": 1,
+                    "topic": "Titles of books, songs, etc.",
+                    "id": "the visual display of quantitative information_Titles of books, songs, etc._1"
+                },
+                {
+                    "text": "storytelling with data",
+                    "frequency": 1,
+                    "topic": "Titles of books, songs, etc.",
+                    "id": "storytelling with data_Titles of books, songs, etc._1"
+                },
+                {
+                    "text": "data visualisation: a handbook for data driven design",
+                    "frequency": 1,
+                    "topic": "Titles of books, songs, etc.",
+                    "id": "data visualisation: a handbook for data driven design_Titles of books, songs, etc._1"
+                }
+            ],
+            "Nationalities or religious or political groups.": [],
+            "Non-GPE locations, mountain ranges, bodies of water.": [],
+            "Named hurricanes, battles, wars, sports events, etc.": [],
+            "Buildings, airports, highways, bridges, etc.": [],
+            "Named documents made into laws.": [],
+            "Any named language.": []
+        }
+    },
+    {
+        "date": "2023-04-19",
+        "words": {
+            "Companies, agencies, institutions, etc.": [],
+            "Countries, cities, states.": [],
+            "People, including fictional.": [
+                {
+                    "text": "streamlit",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "streamlit_People, including fictional._1"
+                },
+                {
+                    "text": "streamlit",
+                    "frequency": 2,
+                    "topic": "People, including fictional.",
+                    "id": "streamlit_People, including fictional._2"
+                },
+                {
+                    "text": "streamlit",
+                    "frequency": 3,
+                    "topic": "People, including fictional.",
+                    "id": "streamlit_People, including fictional._3"
+                },
+                {
+                    "text": "chatbot",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "chatbot_People, including fictional._1"
+                },
+                {
+                    "text": "streamlit",
+                    "frequency": 4,
+                    "topic": "People, including fictional.",
+                    "id": "streamlit_People, including fictional._4"
+                },
+                {
+                    "text": "max",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "max_People, including fictional._1"
+                }
+            ],
+            "Objects, vehicles, foods, etc. (Not services.)": [],
+            "Titles of books, songs, etc.": [],
+            "Nationalities or religious or political groups.": [],
+            "Non-GPE locations, mountain ranges, bodies of water.": [],
+            "Named hurricanes, battles, wars, sports events, etc.": [],
+            "Buildings, airports, highways, bridges, etc.": [],
+            "Named documents made into laws.": [],
+            "Any named language.": []
+        }
+    },
+    {
+        "date": "2023-04-26",
+        "words": {
+            "Companies, agencies, institutions, etc.": [],
+            "Countries, cities, states.": [],
+            "People, including fictional.": [],
+            "Objects, vehicles, foods, etc. (Not services.)": [],
+            "Titles of books, songs, etc.": [],
+            "Nationalities or religious or political groups.": [],
+            "Non-GPE locations, mountain ranges, bodies of water.": [],
+            "Named hurricanes, battles, wars, sports events, etc.": [],
+            "Buildings, airports, highways, bridges, etc.": [],
+            "Named documents made into laws.": [],
+            "Any named language.": []
+        }
+    },
+    {
+        "date": "2023-05-03",
+        "words": {
+            "Companies, agencies, institutions, etc.": [
+                {
+                    "text": "google colab",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "google colab_Companies, agencies, institutions, etc._1"
+                },
+                {
+                    "text": "https://github.com/openai/openai-cookbook/blob/main/examples/visualizing_embeddings_with_atlas.ipynb",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "https://github.com/openai/openai-cookbook/blob/main/examples/visualizing_embeddings_with_atlas.ipynb_Companies, agencies, institutions, etc._1"
+                },
+                {
+                    "text": "ui",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "ui_Companies, agencies, institutions, etc._1"
+                }
+            ],
+            "Countries, cities, states.": [
+                {
+                    "text": "openai",
+                    "frequency": 1,
+                    "topic": "Countries, cities, states.",
+                    "id": "openai_Countries, cities, states._1"
+                },
+                {
+                    "text": "ui",
+                    "frequency": 2,
+                    "topic": "Countries, cities, states.",
+                    "id": "ui_Countries, cities, states._2"
+                },
+                {
+                    "text": "ui",
+                    "frequency": 3,
+                    "topic": "Countries, cities, states.",
+                    "id": "ui_Countries, cities, states._3"
+                }
+            ],
+            "People, including fictional.": [
+                {
+                    "text": "atlas",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "atlas_People, including fictional._1"
+                },
+                {
+                    "text": "atlas",
+                    "frequency": 2,
+                    "topic": "People, including fictional.",
+                    "id": "atlas_People, including fictional._2"
+                },
+                {
+                    "text": "simon",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "simon_People, including fictional._1"
+                }
+            ],
+            "Objects, vehicles, foods, etc. (Not services.)": [
+                {
+                    "text": "atlas",
+                    "frequency": 3,
+                    "topic": "Objects, vehicles, foods, etc. (Not services.)",
+                    "id": "atlas_Objects, vehicles, foods, etc. (Not services.)_3"
+                }
+            ],
+            "Titles of books, songs, etc.": [],
+            "Nationalities or religious or political groups.": [],
+            "Non-GPE locations, mountain ranges, bodies of water.": [],
+            "Named hurricanes, battles, wars, sports events, etc.": [],
+            "Buildings, airports, highways, bridges, etc.": [],
+            "Named documents made into laws.": [],
+            "Any named language.": []
+        }
+    },
+    {
+        "date": "2023-05-10",
+        "words": {
+            "Companies, agencies, institutions, etc.": [
+                {
+                    "text": "deepscatter",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "deepscatter_Companies, agencies, institutions, etc._1"
+                }
+            ],
+            "Countries, cities, states.": [],
+            "People, including fictional.": [
+                {
+                    "text": "atlas",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "atlas_People, including fictional._1"
+                },
+                {
+                    "text": "@jerry tang  you",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "@jerry tang  you_People, including fictional._1"
+                }
+            ],
+            "Objects, vehicles, foods, etc. (Not services.)": [],
+            "Titles of books, songs, etc.": [],
+            "Nationalities or religious or political groups.": [],
+            "Non-GPE locations, mountain ranges, bodies of water.": [],
+            "Named hurricanes, battles, wars, sports events, etc.": [],
+            "Buildings, airports, highways, bridges, etc.": [],
+            "Named documents made into laws.": [],
+            "Any named language.": []
+        }
+    },
+    {
+        "date": "2023-05-17",
+        "words": {
+            "Companies, agencies, institutions, etc.": [
+                {
+                    "text": "ml",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "ml_Companies, agencies, institutions, etc._1"
+                },
+                {
+                    "text": "js",
+                    "frequency": 1,
+                    "topic": "Companies, agencies, institutions, etc.",
+                    "id": "js_Companies, agencies, institutions, etc._1"
+                }
+            ],
+            "Countries, cities, states.": [],
+            "People, including fictional.": [
+                {
+                    "text": "webgpl",
+                    "frequency": 1,
+                    "topic": "People, including fictional.",
+                    "id": "webgpl_People, including fictional._1"
+                }
+            ],
+            "Objects, vehicles, foods, etc. (Not services.)": [],
+            "Titles of books, songs, etc.": [],
+            "Nationalities or religious or political groups.": [],
+            "Non-GPE locations, mountain ranges, bodies of water.": [],
+            "Named hurricanes, battles, wars, sports events, etc.": [],
+            "Buildings, airports, highways, bridges, etc.": [],
+            "Named documents made into laws.": [],
+            "Any named language.": []
+        }
+    }
+]

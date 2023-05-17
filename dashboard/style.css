@@ -1,0 +1,137 @@
+:root{
+    --header-bg-color : #EFF5FD;
+    --main-bg-color : #B0CDF5;
+    --block-bg-color : white;
+    --highlight-color : #3862bb;
+    --bar-fill-color : #5290e9;
+    --gridline-color : white;
+    --text-color : #333;
+    --tickvalues-color : #a0a1a1;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin : 0;
+}
+body{
+    font-family: "FreeMono", monospace;
+    /* background-color : #333; */
+    color : #333;
+}
+.black-bg{
+    background-color : var(--header-bg-color);
+}
+.main-bg{
+    background-color : var(--main-bg-color);
+}
+.block-bg{
+    background-color : var(--block-bg-color);
+    border-radius: 5px;
+}
+
+.body{
+    height: calc(100% - 40px);
+}
+.body .row{
+    height: 49.2%;
+}
+.body .row:first-child{
+    margin-bottom: 0.8%;
+}
+.chart-container{
+    padding : 0;
+}
+.grid-hline .tick line,.grid-hline .domain{
+    stroke: var(--text-color);
+}
+.title{
+    font-size: 14px;
+    text-anchor: middle;
+    fill : black;
+}
+.hover-bar{
+    fill : var(--highlight-color);
+}
+.bar{
+    fill : var(--bar-fill-color);
+}
+.axis .tick line{
+    stroke : var(--highlight-color);
+}
+.axis .tick text{
+    fill : var(--tickvalues-color);
+}
+.axis .domain{
+    stroke : var(--highlight-color);
+}
+
+.line{
+    fill : none;
+    stroke : var(--bar-fill-color);
+    stroke-width: 3;
+}
+#svg-bar .axis .domain, .grid-hline .domain, .axis .tick line{
+    display: none;
+}
+#svg-line .axis .domain, .grid-hline .domain, .axis .tick line{
+    display: none;
+}
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 4px;
+    font: 16px sans-serif;
+    background: #E0EBFB;
+    border: 0px;
+    border-radius: 3px;
+    pointer-events: none;
+}
+
+.dot:hover {
+    cursor: pointer
+}
+.divContainingButtons {
+    height: auto;
+    /* display: flex; */
+}
+.divContainingButtons button {
+    margin: 5px
+}
+button {
+    border-radius: 4px;
+}
+p, table, .normal{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.normal {
+    padding: 10px
+}
+.table-container {
+    width: 100%;
+    max-height: 325px;  /* Set this to your desired height */
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+table tr:nth-child(even) {
+    background-color: #EFF5FD;
+  }
+
+mark {
+    background-color: #C0D7F7;
+}
+.timePeriod {
+    text-decoration: underline;
+}

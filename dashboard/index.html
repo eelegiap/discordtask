@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nomic Discord Insights</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js" integrity="sha512-cd6CHE+XWDQ33ElJqsi0MdNte3S+bQY819f7p3NUHgwQQLXSKjE4cPZTeGNI+vaxZynk1wVU3hoHmow3m089wA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="js/d3.v4.min.js"></script>
+    <script src="js/wordstream.min.js"></script>
+</head>
+
+<body>
+    <div class="header black-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div style="text-align: left">
+                    <h1 style="float:left" class="col-md-12 pt-2 pb-2">Nomic's Discord Community Insights</h1>
+                    <span ><h2 class="col-md-12 pt-2 pb-2">For both #gpt4all and #atlas</h2></span>
+                    
+                </div>
+                <div class='normal'>
+
+
+                    <p>This Discord insights platform takes the pulse of community engagement by highlighting the most
+                        active members and interesting conversations based on historical data from <b>Nomic's Discord servers.</b></p>
+                    <ol>
+                        <li>
+                            <b>Historical data tracking:</b> The site tracks and visualizes the number of new users
+                            joining the Nomic Discord server and the number of messages sent in the '#gpt4all-chat' and '#atlas-chat' channels
+                            of the Nomic Discord server over time. This data is collected using the Tyrrrz/DiscordChatExporter tool from Github.
+                            Obviously, there is a spike in both graphs around the end of March. There is additionally a maximum on 
+                            the "New members on Nomic Discord per day" graph on April 13th with 1641 new members. 
+                            A good additions to the visualization would be the keywords in discussions taking place during each 
+                            time period. 
+                        </li>
+                        <li>
+                            <b>Top posts and contributors:</b> The site also lists out the top posts (by reaction count)
+                            and the leading contributors (by messages sent) in the '#gpt4all-chat' and '#atlas-chat' channels.
+                            Expanding to other channels like dev and help would provide more insights on which members 
+                            are most active and might want to take on a greater role in the community. 
+                        </li>
+                        <li>
+                            <b>Keyword trends:</b> The "Wordstream" visualization 
+                            provides insights into the evolution of conversation topics over time in the Discord. This
+                            is done by tracking keywords and their frequencies across messages in the #gpt4all-chat channel.
+                            This could be improved by incorporating computational topic modeling like LDA or BERT.
+                        </li>
+                    </ol>
+                    <p>Designed by Paige Lee</p>
+                </div>
+
+            </div>
+            <br>
+            <div class="row main-bg" style="padding-top:15px">
+                <div class="col-md-12 divContainingButtons">
+                    <span class="float-left">
+                        <h3>New users and messages over time</h3>
+                        <p>This historical data was scraped from the Nomic Discord server using
+                            the Github repo <a href="https://github.com/Tyrrrz/DiscordChatExporter/tree/master"
+                                target="_blank">
+                                Tyrrrz/DiscordChatExporter</a>.
+                        </p>
+                    </span>
+                    <span class='float-right' style="float: right">
+                        See <button id="daily">Daily</button><button id="weekly">Weekly</button><button
+                            id="monthly">Monthly</button> data
+                        <br>
+                        <div id="dropdown" style="float: right"></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body main-bg pt-2 pb-2 pl-2 pr-2">
+        <div class="container-fluid" style="height: 100%">
+            <div class="row">
+                <div class="col-md-6 chart-container" style="height: 100%">
+                    <div style="height: 100%;margin-right:1.6%" class="block-bg" id="line2">
+                        <h5 style="text-align: center; padding-top:5px">New members on Nomic Discord per <span class="timePeriod"></span></h5>
+                    </div>
+                </div>
+                <div class="col-md-6 chart-container" style="height: 100%">
+                    <div style="height: 100%" class="block-bg" id="line1">
+                        <h5 style="text-align: center; padding-top:5px">Messages sent to <mark><span
+                            class="tabletitle"></span></mark> per <span class="timePeriod"></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 chart-container" style="height: 100%">
+                    <div style="height: 100%;margin-right:1.6%" class="block-bg">
+                        <h5 style="text-align: center; padding-top:5px">Top posts (by reaction ct) in <mark><span
+                                class="tabletitle"></span></mark></h5>
+                                <p style="text-align: center;">Messages which generated the most reactions</p>
+                        <div class="table-container">
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Rank</th>
+                                            <th>Username</th>
+                                            <th>Post</th>
+                                            <th>Reactions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="topPosts">
+                                        <!-- The rows will be inserted here by the JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 chart-container" style="height: 100%">
+                    <div style="height: 100%" class="block-bg">
+                        <h5 style="text-align: center; padding-top:5px">Leading contributors to <mark><span
+                            class="tabletitle"></span></mark></h5>
+                            <p style="text-align: center;">Highly involved members of the community</p>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Username</th>
+                                        <th>Messages Sent</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="leaderboard">
+                                    <!-- Table rows will be populated here -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <h3>#gpt4all-chat only: keywords over time</h3>
+                    <h4>"Wordstream" of historical message content</h4>
+                    <p>
+                        Wordsream (<a href='https://github.com/huyen-nguyen/maker' target="_blank">Github here: https://github.com/huyen-nguyen/maker</a>) is a
+                        visualization of "topics" over time by displaying a stream of keywords.
+                        In this instance, no topic modeling software is used; "topics" instead
+                        refer to what category of named entity the word is labeled by Spacy.
+                        The y-axis is not as important as the relative widths of the streams of different
+                        colors and the repetition of words. By mousing over words, we see when words reappear across time. (The font-size
+                        of a word refers to its relative frequency to other words during a certain time period)
+                        As you can see, out-of-the-box NER is quite bad, but nevertheless we can see the
+                        the contours of the evolution of conversation topics over time on the Discord.
+                    </p>
+                    <div style="height: 100%" id="wordstream"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // example use
+        let svg = d3.select("#wordstream").append('svg')
+            .attr("width", document.body.clientWidth)
+            .attr("height", 800)
+            .style('background-color', 'white')
+
+        let config = {
+            topWord: 20,
+            minFont: 14,
+            maxFont: 40,
+            tickFont: 16,
+            legendFont: 16,
+            curve: d3.curveMonotoneX
+        };
+
+        d3.json("data/data.json", function (error, worddata) {
+            console.log(worddata)
+            wordstream(svg, worddata, config)
+        });
+    </script>
+</body>
+
+</html>
